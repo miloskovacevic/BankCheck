@@ -53,10 +53,23 @@ namespace BankCheckApp
                     if (validateTextBox())
                     {
                         double deposit = Convert.ToDouble(txtTransAmount.Text);
-
+                        DepositTransaction(deposit);
+                    }
+                    else
+                    {
+                        ErrorMessage();
                     }
                     break;
                 case 's':
+                    if (validateTextBox())
+                    {
+                        double serviceCharge = Convert.ToDouble(txtTransAmount.Text);
+                        ServiceChargeTransaction(serviceCharge);
+                    }
+                    else
+                    {
+                        ErrorMessage();
+                    }
                     break;
                 case 'c':
                     break;
@@ -66,18 +79,38 @@ namespace BankCheckApp
             }
         }
 
+        private void ServiceChargeTransaction(double s)
+        {
+            if (balance - s >= 0)
+            {
+                balance -= s;
+            }
+            else
+            {
+                MessageBox.Show("Insufficient funds! Cannot do the transaction!");
+            }
+           
+        }
+
         private void DepositTransaction(double d)
-        { 
-            
+        {
+            balance += d;
+        }
+
+        private void ErrorMessage()
+        {
+            MessageBox.Show("Invalid entry, please enter valid amount!");
+        }
+
+        private void DisplayBalance()
+        {
+            txtBalance.Text = "$" + balance.ToString();
         }
 
         private bool validateTextBox()
         {
             double value;
             return Double.TryParse(txtTransAmount.Text, out value);
-
-
-
         }
 
         //clear button

@@ -7,3 +7,12 @@ F:\CSharp\winforms\BankCheck\BankCheckApp\BankCheckApp\obj\Debug\BankCheckApp.Pr
 F:\CSharp\winforms\BankCheck\BankCheckApp\BankCheckApp\obj\Debug\BankCheckApp.csproj.GenerateResource.Cache
 F:\CSharp\winforms\BankCheck\BankCheckApp\BankCheckApp\obj\Debug\BankCheckApp.exe
 F:\CSharp\winforms\BankCheck\BankCheckApp\BankCheckApp\obj\Debug\BankCheckApp.pdb
+D:\playground\BankCheck\BankCheckApp\BankCheckApp\bin\Debug\BankCheckApp.exe.config
+D:\playground\BankCheck\BankCheckApp\BankCheckApp\obj\Debug\BankCheckApp.exe
+D:\playground\BankCheck\BankCheckApp\BankCheckApp\obj\Debug\BankCheckApp.pdb
+D:\playground\BankCheck\BankCheckApp\BankCheckApp\bin\Debug\BankCheckApp.exe
+D:\playground\BankCheck\BankCheckApp\BankCheckApp\bin\Debug\BankCheckApp.pdb
+D:\playground\BankCheck\BankCheckApp\BankCheckApp\obj\Debug\BankCheckApp.csprojResolveAssemblyReference.cache
+D:\playground\BankCheck\BankCheckApp\BankCheckApp\obj\Debug\BankCheckApp.Form1.resources
+D:\playground\BankCheck\BankCheckApp\BankCheckApp\obj\Debug\BankCheckApp.Properties.Resources.resources
+D:\playground\BankCheck\BankCheckApp\BankCheckApp\obj\Debug\BankCheckApp.csproj.GenerateResource.Cache
