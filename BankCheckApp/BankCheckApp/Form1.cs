@@ -20,14 +20,10 @@ namespace BankCheckApp
         private static int totalChecks = 0;
         private static double totalCheckAmount = 0;
 
-
-
         public Form1()
         {
             InitializeComponent();
         }
-
-       
 
         //calculate button
         private void btnCalculate_Click(object sender, EventArgs e)
@@ -54,28 +50,62 @@ namespace BankCheckApp
                     {
                         double deposit = Convert.ToDouble(txtTransAmount.Text);
                         DepositTransaction(deposit);
+                        DisplayBalance();
                     }
                     else
                     {
                         ErrorMessage();
                     }
                     break;
+
                 case 's':
                     if (validateTextBox())
                     {
                         double serviceCharge = Convert.ToDouble(txtTransAmount.Text);
                         ServiceChargeTransaction(serviceCharge);
+                        DisplayBalance();
+
                     }
                     else
                     {
                         ErrorMessage();
                     }
                     break;
+
                 case 'c':
+                    if (validateTextBox())
+                    {
+                        double check = Convert.ToDouble(txtTransAmount.Text);
+                        checkTransaction(check);
+                        DisplayBalance();
+
+                    }
+                    else
+                    {
+                        ErrorMessage();
+                    }
                     break;
+
                 default:
                     MessageBox.Show("Select type of transaction");
                     break;
+            }
+            txtTransAmount.Text = string.Empty;
+        }
+
+        public void checkTransaction(double c)
+        {
+            if (balance - c >= 0)
+            {
+                balance -= c;
+                totalChecks++;
+                totalCheckAmount += c;
+            }
+            else
+            {
+                balance -= 10;
+                totalCheckAmount += 10;
+                MessageBox.Show("Insufficient funds!");
             }
         }
 
@@ -95,6 +125,8 @@ namespace BankCheckApp
         private void DepositTransaction(double d)
         {
             balance += d;
+            totalDeposits++;
+            totalDepositsAmount += d;
         }
 
         private void ErrorMessage()
@@ -121,6 +153,7 @@ namespace BankCheckApp
             radCheck.Checked = false;
             radDeposit.Checked = false;
             radServiceCharge.Checked = false;
+            balance = 0;
         }
 
         // button exit
@@ -132,7 +165,11 @@ namespace BankCheckApp
         //summary button
         private void btnSummary_Click(object sender, EventArgs e)
         {
-
+            string msg = "Total number of deposits: " + totalDeposits.ToString() + "\n\r";
+                   msg += "Total amount of deposits: $" + totalDepositsAmount.ToString() + "\n\r";
+                   msg += "Total number of checks: " + totalChecks.ToString() + "\n\r";
+                   msg += "Total amount of checks: $" + totalCheckAmount.ToString();
+                   MessageBox.Show(msg, "Summary");
         }
 
         
