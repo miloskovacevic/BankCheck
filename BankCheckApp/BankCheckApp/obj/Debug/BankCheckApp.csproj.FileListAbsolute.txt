@@ -16,3 +16,12 @@ D:\playground\BankCheck\BankCheckApp\BankCheckApp\obj\Debug\BankCheckApp.csprojR
 D:\playground\BankCheck\BankCheckApp\BankCheckApp\obj\Debug\BankCheckApp.Form1.resources
 D:\playground\BankCheck\BankCheckApp\BankCheckApp\obj\Debug\BankCheckApp.Properties.Resources.resources
 D:\playground\BankCheck\BankCheckApp\BankCheckApp\obj\Debug\BankCheckApp.csproj.GenerateResource.Cache
+C:\Users\Ganesh\Desktop\BankCheck-master\BankCheckApp\BankCheckApp\bin\Debug\BankCheckApp.exe.config
+C:\Users\Ganesh\Desktop\BankCheck-master\BankCheckApp\BankCheckApp\bin\Debug\BankCheckApp.exe
+C:\Users\Ganesh\Desktop\BankCheck-master\BankCheckApp\BankCheckApp\bin\Debug\BankCheckApp.pdb
+C:\Users\Ganesh\Desktop\BankCheck-master\BankCheckApp\BankCheckApp\obj\Debug\BankCheckApp.csprojResolveAssemblyReference.cache
+C:\Users\Ganesh\Desktop\BankCheck-master\BankCheckApp\BankCheckApp\obj\Debug\BankCheckApp.Form1.resources
+C:\Users\Ganesh\Desktop\BankCheck-master\BankCheckApp\BankCheckApp\obj\Debug\BankCheckApp.Properties.Resources.resources
+C:\Users\Ganesh\Desktop\BankCheck-master\BankCheckApp\BankCheckApp\obj\Debug\BankCheckApp.csproj.GenerateResource.Cache
+C:\Users\Ganesh\Desktop\BankCheck-master\BankCheckApp\BankCheckApp\obj\Debug\BankCheckApp.exe
+C:\Users\Ganesh\Desktop\BankCheck-master\BankCheckApp\BankCheckApp\obj\Debug\BankCheckApp.pdb
