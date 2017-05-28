@@ -171,6 +171,13 @@ namespace BankCheckApp
                    msg += "Total amount of checks: $" + totalCheckAmount.ToString();
                    MessageBox.Show(msg, "Summary");
         }
+		void TxtTransAmountKeyPress(object sender, KeyPressEventArgs e)
+		{
+			if(!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && !(e.KeyChar.Equals('.')))
+			{
+				e.Handled=true;
+			}
+		}
 
         
 
